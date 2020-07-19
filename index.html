@@ -14,7 +14,22 @@
   <h2>Take a <strike>photo</strike> sound:</h2>
 </div>
 
+<div id="waveform"></div>
+
+<div id="waveform2"></div>
+
 </body>
 
+<script src="https://unpkg.com/wavesurfer.js"></script>
+
+<script>
+	var wavesurfer = WaveSurfer.create({
+    	container: '#waveform',
+    	waveColor: 'violet',
+    	progressColor: 'purple'
+	});
+
+	wavesurfer.load('electronics1.wav');
+</script>
 
 </html>
